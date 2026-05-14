@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    
+}
+
+/* Classe utilitaria para esconder elementos via JS */
+
+.oculto {
+    display: none !important;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Estilizaçao do Card de login*/
+.card-login {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0);
+    width: 320px;
+    text-align: center;
+
+}
+
+.card-login input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card-login button {
+    width: 100%;
+    padding: 10px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Dashboard */ 
+.topo-dashboard {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#btn-sair {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* slideshow */
+
+.galeria {
+    position: relative;
+    text-align: center;
+}
+
+#foto-produto {
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2 );
+}
+
+.nav-galeria {
+    margin-top: 15px;
+}
+
+.nav-galeria button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.controles {
+    background: #fff;
+    padding: 20px;
+    min-width: 250px;
+    
+}
+
+.controles button {
+    display:block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/* ------IMPORTANTE------
+------ajuste responsivo------
+*/
+
+@media (max-width: 600px){
+    .container-flex {flex-direction: column;}
+    #foto-produto {width: 90%;}
+}
